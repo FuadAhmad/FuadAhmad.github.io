@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Fuad Ahmad</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Personal Website" />
+<meta name="author" content="Fuad Ahmad" />
+<meta name="keywords" content="put, your, keyword, here" />
+
+<!-- css -->
+<link rel="stylesheet" href="../css/style3.css" type="text/css" media="all">
+<link rel="stylesheet" href="../css/style2.css" type="text/css" media="all">
+
+</head>
+
+<body>
+	<header>
+		<div>
+			<ul class="topnav">
+				<li><a href="../index.html"><span><span>Home</span></span></a></li>
+				<li><a href="../html/about-me.html"><span><span>About</span></span></a></li>
+				<li><a href="../html/education.html"><span><span>Education</span></span></a></li>
+				<li><a href="../html/experience.html"><span><span>Experience</span></span></a></li>
+				<li><a href="../html/publication.html"><span><span>Publication</span></span></a></li>
+				
+				<li><a class="active" href="../html/contact-us.html"><span><span>Contact</span></span></a></li>
+				
+				<li class="right"><a href="#"><button onclick="myFunction()">Toggle dark mode</button></a></li>
+			</ul>
+		</div>
+	</header>
+	
+	<div class="pic-bio" style="padding:15px;">
+		<div class="col1-of2">
+			<article class="col-1">
+			<h2>Contact Form:</h2>
+			<form id="contacts-form" action="">
+					<fieldset>
+					<div class="field">
+						<label>Your Name:</label><br/>
+						<input type="text" value=""/>
+					</div>
+					<div class="field">
+						<label>Your E-mail:</label><br/>
+						<input type="email" value=""/>
+					</div>
+					<div class="field">
+						<label>Website:</label><br/>
+						<input type="text" value=""/>
+					</div>
+					<div>
+						<label>Message:</label><br/>
+						<textarea cols="1" rows="1"></textarea><br/>
+						
+						<a href="#" onClick="document.getElementById('contacts-form').submit()">Send Your Message!</a>
+
+					</div>
+					</fieldset>
+			</form>
+		</article>
+		</div>
+		
+		<div class="col2-of2" style="text-align: left;">
+		<article class="col-2">
+			<h2>My Contacts:</h2>
+			<address>
+			<span>Zip Code:</span>88003<br>
+			<span>Country:</span>USA<br>
+			<span>City:</span>Las Cruces<br>
+			<span>Telephone:</span>+1(575) 5635600<br>
+			<span>Fax:</span>+1(575) 5635620<br>
+			<span>Email:</span><a href="#">fuad@nmsu.edu</a>
+			</address>
+	   </article>
+		 
+		</div>  
+
+	</div>
+
+<!--script type="text/javascript"> Cufon.now(); </script-->
+	<script>
+		function myFunction() {
+		var element = document.body;
+		element.classList.toggle("dark-mode");
+		}
+	</script>
+</body>
+</html>
