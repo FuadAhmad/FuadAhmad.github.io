@@ -138,3 +138,62 @@ footer .inside {padding:48px 0 0 0}
 footer a {color:rgb(103, 103, 103)}
 
 
+
+/* ---- CV page + publication buttons/tags (added Sep 2026) ---- */
+.cv-actions {
+    text-align: center;
+    margin: 10px 0 18px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #04AA6D;
+    color: #fff !important;
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.95em;
+}
+
+.btn:hover { background-color: #038a58; }
+
+.btn-alt { background-color: #555; }
+.btn-alt:hover { background-color: #333; }
+
+.cv-viewer {
+    max-width: 1000px;
+    height: 85vh;
+    min-height: 500px;
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    background-color: #fff;
+}
+
+.cv-note {
+    text-align: center;
+    font-size: 0.85em;
+    color: #666;
+    margin: 10px 0;
+}
+
+.dark-mode .cv-note { color: #bbb; }
+.dark-mode .cv-viewer { border-color: #555; }
+
+.pub-tag {
+    display: inline-block;
+    background-color: #04AA6D;
+    color: #fff;
+    font-size: 0.72em;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.pub-list li a { color: #0b6bb3; }
+.dark-mode .pub-list li a { color: #6fb8ee; }
+
+@media screen and (max-width: 800px) {
+    .cv-viewer { height: 70vh; }
+}
